@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #2d2d2d;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    background: gold;
+    margin-top: 200px;
+    animation: moon 5s infinite linear;
+}
+
+@keyframes moon {
+    20% {
+        transform: rotate(35deg);
+        border-radius: 12px;
+        background: darkgreen;
+        margin-left: 80px;
+    }
+
+    40% {
+        transform: rotate(50deg);
+        border-radius: 20%;
+        background: blue;
+        margin-left: 100px;
+    }
+
+    60% {
+        transform: rotate(70deg);
+        border-radius: 30%;
+        background: rgb(94, 255, 100);
+        margin-left: 120px;
+    }
+
+    100% {
+        transform: rotate(180deg);
+        border-radius: 50%;
+        background: rgb(255, 0, 0);
+        margin-left: 140px;
+    }
+}
